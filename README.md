@@ -1,11 +1,12 @@
-# Challenge 1 - ETL
+# Data Engineering
+## Challenge 1 - ETL
 
-## Task
+### Task
 
 The german weather service (DWD) provides daily weather data from their weather stations.
 Your task is to write an ETL (extract, transform, load) script that, for a given station ID, downloads the temperature data and stores it into a SQL database.
 
-## Materials
+### Materials
 
 DWD provides the data we are interested in on an FTP Server: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/
 
@@ -14,7 +15,7 @@ A detailled description of the data can be found here: https://opendata.dwd.de/c
 For portability reasons please write your data into the attached file-based SQLite database: `temp.sqlite`
 This gives you already the desired data model and an example entry.
 
-## Requirements
+### Requirements
 
 1. Write an ETL script that for a given set of station ids, adds the dwd station to the database & all temperature data of this station.
 2. We are interested in the variable: "TMK daily mean of temperature °C" and in stations 00078, 00090, 05426, 05906 
@@ -22,21 +23,21 @@ This gives you already the desired data model and an example entry.
 4. Document you script 
 5. On interview day present your solution and the key concepts you used.
 
-# Challenge 2 - API
+## Challenge 2 - API
 
-## Task
+### Task
 
 We have a SQL database for observed weather measurements.
 Your task is expose a SQL database in a RESTful API in order to enable FAIR (Findable, Accessible, Interoperable & Reusable) principles.
 
-## Materials
+### Materials
 
 We provide you a file-based SQLite database: `api.sqlite`.
 
 You are free in your technology choice. 
 
 
-## Requirements
+### Requirements
 
 The API should expose these 4 endpoints:
 
